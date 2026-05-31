@@ -1,0 +1,15 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%; // Add height to cover the screen
+    background-color: #1a1a1a; // Darker tech-vibe
+    color: white; // White text so you can actually see "Login Page"
+}

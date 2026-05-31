@@ -1,0 +1,56 @@
+// The manual toggle button
+.theme-toggle {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: var(--casing-bg);
+    color: var(--text-main);
+    border: 2px solid var(--casing-border-bottom);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 0 var(--casing-border-bottom), 0 10px 15px var(--shadow-heavy);
+    transition: transform 0.1s, box-shadow 0.1s;
+
+    &:active {
+        transform: translateY(4px);
+        box-shadow: 0 0 0 var(--casing-border-bottom), 0 4px 5px var(--shadow-heavy);
+        -webkit-transform: translateY(4px);
+        -moz-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+        -o-transform: translateY(4px);
+    }
+}
+
+// Main Login/Action Button
+.button.primary-button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 18px;
+    background: var(--accent);
+    color: var(--button-text);
+    border: none;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0 6px 0 var(--accent-shadow), 0 15px 25px var(--shadow-soft);
+    transition: transform 0.1s, box-shadow 0.1s, filter 0.2s, background 0.3s;
+
+    &:hover {
+        filter: brightness(1.1);
+    }
+
+    &:active {
+        transform: translateY(6px);
+        box-shadow: 0 0 0 var(--accent-shadow), 0 5px 10px var(--shadow-soft);
+    }
+}
